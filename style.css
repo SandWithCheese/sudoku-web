@@ -1,0 +1,53 @@
+body {
+   display: flex;
+   flex-direction: column;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center;
+   background-color: #0F0F0F;
+   color: #FBFBFB;
+}
+
+.baris-1, .baris-2, .baris-3, .baris-4, .baris-5, .baris-6, .baris-7, .baris-8, .baris-9{
+   display: flex;
+   justify-content: center;
+}
+
+.container input {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   width: 2em;
+   height: 2em;
+   text-align: center;
+   background-color: #FBFBFB;
+   border: 0.1px solid #333333;
+}
+
+button {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin-top: 2em;
+   padding: 0.5em 1.5em;
+   background-color: #FBFBFB;
+}
+
+@media (min-width: 600px) {
+   .container input {
+      width: 3em;
+      height: 3em;
+   }
+}
+
+.container input:focus{
+   outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+   appearance: textfield;
+  -moz-appearance: textfield;
+}
