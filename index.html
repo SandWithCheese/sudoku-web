@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/gnomesudoku_104207.ico">
     <title>Sudoku</title>
 </head>
 <body>
@@ -109,7 +110,14 @@
             <input type="number" min="1" max="9">
             <input type="number" min="1" max="9">
         </div>
-        <button onclick="getBoard()">Create</button>
+        <div class="button-container">
+            <button onclick="getBoard()">Create</button>
+            <button onclick="check()">Check</button>
+            <button onclick="solveBoard()">Solve</button>
+        </div>
+        <p>Notes:</p>
+        <p>Only use "solve" if you haven't inputted any numbers</p>
+        <p>Ctrl + Shift + R to do hard refresh</p>
     </div>
     <script src="index.js"></script>
 </body>
